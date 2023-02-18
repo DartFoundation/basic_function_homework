@@ -2,6 +2,7 @@
 
 //  Return the value 0
 int func() {
+  
   return 0;
 }
 
