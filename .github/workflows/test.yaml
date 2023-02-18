@@ -5,6 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+        with:
+          repository: dart-test-2022/basicfunctionHomework_test
+          path: test
       - uses: dart-lang/setup-dart@v1.3
       - run: dart pub get
       - run: dart test
