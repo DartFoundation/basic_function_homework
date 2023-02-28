@@ -19,8 +19,6 @@ jobs:
       - name: sendtest
         run: |
           python test/confest.py
-          CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }})
-          echo 'changed files: '
-          echo $CHANGED_FILES
+          CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}) 
           python test/sendtest.py ${{github.actor}} '${{github.repository}}' "$CHANGED_FILES"
 
