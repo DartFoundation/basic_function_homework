@@ -1,6 +1,6 @@
 //  Create a function called func.
 
-//  Create function arguments a.
+//  Create function with arguments a.
 
 //  Return the value a.
 void main() {}
